@@ -109,8 +109,8 @@ class User(GameScreen):
 
     def user_move(self):
         while True:
-            self.get_screen()
             position = input("\n\nВведите номер клетки и нажмите Enter: ")
+            self.get_screen()
             if not position:
                 self.get_screen()
                 print("\nВы не ввели номер клетки")
